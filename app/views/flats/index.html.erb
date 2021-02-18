@@ -1,0 +1,14 @@
+<div class='container'>
+  <div class="card-box">
+    <% @flats.each do |flat| %>
+    <div class="card">
+      <img src="https://source.unsplash.com/500x350/?london,apartment" alt="apartment">
+      <h3><%= flat.name %> </h3>
+      <p><%= flat.address %> </p>
+      <p><%= flat.number_of_guests %> </p>
+      <p><%= flat.price_per_night %> </p>
+
+      <% end %>
+    </div>
+  </div>
+</div>
